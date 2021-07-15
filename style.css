@@ -1,4 +1,6 @@
-/* --------------------------- google fonts ------------------  */
+/* ---------
+google fonts
+--------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
@@ -11,13 +13,17 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* ........................ common design -------------------------- */
+/* ----------
+common design 
+---------- */
 a{
     color: white;
     text-decoration: none;
 }
 
-/*---------------------- start  header menubar style    ----------------------- */
+/*-------------------------
+start  header menubar style
+------------------------- */
 
 .header_banner{
     background-color: #2D25A0;
@@ -57,9 +63,13 @@ a{
     
 }
 
-/*---------------------- End header menubar  style    ----------------------- */
+/*-----------------------
+End header menubar  style
+----------------------- */
 
-/*---------------------- start  header  banner style    ----------------------- */
+/*-------------------------
+start  header  banner style
+------------------------ */
 
 .banner_part{
     display: flex;
@@ -89,9 +99,13 @@ a{
     transform: scale(1.1);
 }
 
-/*---------------------- End header  banner style    ----------------------- */
+/*----------------------
+End header  banner style
+--------------------- */
 
- /* ---------------------------------------start player details section style --------------------------------  */
+ /* -------------------------------
+ start player details section style
+ -------------------------------- */
  main{
      width: 100%;
    
@@ -129,9 +143,13 @@ a{
    
  }
 
- /* ---------------------------------------End player details section style --------------------------------  */
+ /* -----------------------------
+ End player details section style
+ ----------------------------- */
 
- /* ----------------------------------start highlight style -----------------------------------------  */
+ /* ------------------
+ start highlight style
+ ------------------ */
 
  .highlight{
      display: flex;
@@ -162,10 +180,14 @@ a{
     max-height: 427px;
  }
 
-  /* ---------------------------------- End  highlight style -----------------------------------------  */
+  /* --------- --------
+  End  highlight style
+  -----------------  */
 
 
-  /*------------------------------------------- start footer section style---------------------------  */
+  /*------------------------
+  start footer section style
+  ----------------------  */
 
 footer{
       width: 100%;
@@ -196,17 +218,25 @@ footer p{
     font-weight: 400px;
     margin-bottom: 63px;
 }
-  /*------------------------------------------- End footer section style---------------------------  */
+  /*----------------------
+  End footer section style
+  ---------------------  */
 
 
-   /*-------------------------------------------- start media query for responsive ---------------------------------- */
+   /*------------------------------
+   start media query for responsive
+   ----------------------------- */
   
-   /* ---------------------------For Mobiles responsive --------------------------------------- */
+   /* -------------------
+   For Mobiles responsive 
+   ------------------- */
 
 
    @media only screen and (max-width: 688px){
 
-    /*------------ start  header banner--------------------  */
+    /*------------------
+    start  header banner
+    ----------------  */
     .navbar {
         display: flex;
         justify-content: flex-end;
@@ -234,9 +264,13 @@ footer p{
         margin: 50px 16px 0 16px;
    }
 
-    /*------------ end  header banner--------------------  */
+    /*----------------
+    end  header banner
+    --------------  */
 
-    /*------------ start  main section --------------------  */
+    /*-----------------
+    start  main section
+    ---------------  */
 
     .footballers{
         display: flex;
@@ -321,10 +355,14 @@ footer p{
         padding: 8px 10px;
         font-size: 13px;
     }
-    /*------------ End  main section --------------------  */
+    /*---------------
+    End  main section
+    -------------  */
 
 
-     /* ------------------------  -----------  start  footer resposive ---------------------------- */
+     /* --------------------
+     start  footer resposive
+     -------------------- */
      footer{
          margin-top: 43px;
      }
@@ -342,9 +380,13 @@ footer p{
      }
     
             
-    /* ------------------------  -----------  End  footer responsive ---------------------------- */
+    /* -------------------
+    End  footer responsive
+    ------------------- */
    }
-/* ---------------------------For Mini Mobiles responsive --------------------------------------- */
+/* ------------------------
+For Mini Mobiles responsive
+------------------------ */
 
 
     @media only screen and (max-width: 480px){
@@ -360,10 +402,14 @@ footer p{
         }
     }
 
- /* --------------------------- End Mini Mobiles responsive --------------------------------------- */
+ /* ------------------------
+ End Mini Mobiles responsive
+ ------------------------- */
 
   
-      /* ---------------------------For too Mini Mobiles responsive --------------------------------------- */
+      /* ----------------------------
+      For too Mini Mobiles responsive 
+      ---------------------------- */
 
       @media only screen and (max-width: 414px){
         .banner_part img{
@@ -375,4 +421,6 @@ footer p{
         }
 
      }
-      /* --------------------------- End too Mini Mobiles responsive --------------------------------------- */
+      /* ----------------------------
+      End too Mini Mobiles responsive 
+      ---------------------------- */

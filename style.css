@@ -1,29 +1,378 @@
+/* --------------------------- google fonts ------------------  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* { margin: 0;
+     padding: 0 ;}
+
 body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    margin: 0%;
 }
-h1{
-    font-size: 50px;
-}
-.flexible-container{
-    display: flex;
-    margin-bottom: 50px;
-    background-color: #2D25A0;
+/* ........................ common design -------------------------- */
+a{
     color: white;
-}
-.half-width{
-    width: 50%;
-    padding: 5%;
-}
-.half-width img{
-    width: 80%;
-}
-.link-button{
     text-decoration: none;
-    background-color: #E02C6D;
-    background-image:#E02C6D;
-    padding: 10px 40px;
-    border-radius: 5px;
-    color: white;
-    font-weight: 700;
 }
+
+/*---------------------- start  header menubar style    ----------------------- */
+
+.header_banner{
+    background-color: #2D25A0;
+    width: 100%;
+    overflow: auto;   
+    transition: background-color 1.5s linear 0.3s  ;
+
+}
+.header_banner:hover{
+    background-color: #071931;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 52px;
+}
+.menubar{
+    display: flex;
+    align-items: center;
+}
+.menubar a{
+    font-size: 16px;
+    margin-right: 36px;
+}
+.btn{
+     background-color: #E02C6D;
+     padding: 10px 24px;
+     border-radius: 5px;
+}
+.btn:hover{
+    background-color: #009FB6;
+}
+
+.login_icon_size{
+    margin-right: 12px;
+    
+}
+
+/*---------------------- End header menubar  style    ----------------------- */
+
+/*---------------------- start  header  banner style    ----------------------- */
+
+.banner_part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 49px 123px 75px 156px ;
+}
+.banner_text{
+    margin-right: 90px;
+    max-width: 460px;
+}
+.banner_text h1{
+    font-size: 54px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 18px;
+}
+.watch_icon_size {
+    margin-left: 8px;
+}
+.banner_part img{
+    max-width: 556.01px;
+    min-height: 438px;
+    transition: transform 1.5s linear 0.5s;
+}
+.header_banner:hover .banner_part img{
+    transform: scale(1.1);
+}
+
+/*---------------------- End header  banner style    ----------------------- */
+
+ /* ---------------------------------------start player details section style --------------------------------  */
+ main{
+     width: 100%;
+   
+ }
+ .footballers{
+      max-width: 1050px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 27px;
+      margin: 0 auto;
+      margin-top: 70px;
+ }
+.footballer{
+    
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+ .footballer img{
+    max-width: 300px;
+    min-height: 256px;
+    
+ }
+ .footballer h1{
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+
+ }
+ .footballer p{
+   font-size: 14px;
+   line-height: 28px;
+   
+ }
+
+ /* ---------------------------------------End player details section style --------------------------------  */
+
+ /* ----------------------------------start highlight style -----------------------------------------  */
+
+ .highlight{
+     display: flex;
+     align-items: center;
+     margin: 0 auto;
+     max-width: 1050px;
+     margin-top: 165px;
+     
+     
+ }
+ .highlight_text{
+    max-width: 469px;
+    margin-right: 76px;
+ }
+
+ .highlight_text h1{
+     
+     font-size: 48px;
+     font-weight: bold;
+ }
+ .highlight_text p{
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 24px;
+ }
+ .highlight img{
+    max-width: 567px;
+    max-height: 427px;
+ }
+
+  /* ---------------------------------- End  highlight style -----------------------------------------  */
+
+
+  /*------------------------------------------- start footer section style---------------------------  */
+
+footer{
+      width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 100px;
+
+  }
+  footer img{
+    max-width: 483.87px;
+    max-height: 110px;
+    margin-bottom: 20px;
+  }
+.social_icon{
+    font-size: 17px;
+    background-color: #E7E7E8;
+    padding: 8px;
+    margin-right:  14px;
+    border-radius: 50%;
+    color: #969BAB;
+    margin-bottom: 20px;
+
+}
+footer p{
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 63px;
+}
+  /*------------------------------------------- End footer section style---------------------------  */
+
+
+   /*-------------------------------------------- start media query for responsive ---------------------------------- */
+  
+   /* ---------------------------For Mobiles responsive --------------------------------------- */
+
+
+   @media only screen and (max-width: 688px){
+
+    /*------------ start  header banner--------------------  */
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .navbar a{
+        margin-right: 45px;
+    }
+    .menubar{
+        display: none;
+    }
+   .banner_part{
+       display: block;
+       margin: 0 16px;
+   }
+   .banner_text {
+      margin: 46px 66px 30px 16px;
+   }
+   .banner_text h1{
+       font-size: 36px;
+   }
+   .banner_part img{
+        width: 100%;
+        max-height: 259.17px;
+        margin: 50px 16px 0 16px;
+   }
+
+    /*------------ end  header banner--------------------  */
+
+    /*------------ start  main section --------------------  */
+
+    .footballers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 24px;
+    }
+
+    .highlight{
+        display: block;
+        margin-top: 60px;
+    }
+    .highlight_text{
+        margin: 0 16px;
+    }
+    .highlight_text h1{
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    .highlight_text p{
+        font-size: 16px;
+    }
+    .highlight img{
+        max-width: 328px;
+        max-height: 248px;
+        margin: 30px 16px 43px 16px;
+    }
+
+    .sponsor_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        box-shadow: 0px 0px 40px rgba(163, 163, 163, 0.15);
+        grid-gap: 20px 50px;
+        border-radius: 5px;
+    }
+
+    .sponsor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsor img{
+        margin-top: 10px;
+    }
+    .sponsor a{
+        font-size: 14px;
+        margin-top: 5px;
+        padding-bottom: 10px;
+    }
+    .subscribe_form {
+        margin-top: 43px;
+        max-height: 270px;
+    }
+    .subscribe_form h3{
+        max-width: 231px;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: normal;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    .subscribe{
+        margin-bottom: 10px;
+        padding: 8px 10px;
+        font-size: 13px;
+        margin-right: 0;
+
+    }
+    .subscribe_btn{
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    /*------------ End  main section --------------------  */
+
+
+     /* ------------------------  -----------  start  footer resposive ---------------------------- */
+     footer{
+         margin-top: 43px;
+     }
+     footer img{
+        max-width: 160;
+        max-height: 63px;
+       
+     }    
+     .social_icons{
+         margin-left: 14px;
+
+     }
+     footer p{
+         font-size: 18px;
+     }
+    
+            
+    /* ------------------------  -----------  End  footer responsive ---------------------------- */
+   }
+/* ---------------------------For Mini Mobiles responsive --------------------------------------- */
+
+
+    @media only screen and (max-width: 480px){
+     .sponsors{
+        grid-gap: 20px 20px;
+      }
+
+    .subscribe_form h3{
+        margin-left: 10px;
+     }
+     form{
+         margin-right: 10px;
+        }
+    }
+
+ /* --------------------------- End Mini Mobiles responsive --------------------------------------- */
+
+  
+      /* ---------------------------For too Mini Mobiles responsive --------------------------------------- */
+
+      @media only screen and (max-width: 414px){
+        .banner_part img{
+            width: 260px;
+            height: 230px;
+       }
+        .highlight img{
+            width:300px;  
+        }
+
+     }
+      /* --------------------------- End too Mini Mobiles responsive --------------------------------------- */
